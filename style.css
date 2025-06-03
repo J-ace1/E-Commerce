@@ -1,0 +1,158 @@
+/* Set the e-commerce background image */
+body {
+  background-image: url('https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+}
+/* Overlay to darken background for better text readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+header {
+  background-color: rgba(58, 67, 70, 0.7);
+  padding: 20px;
+  text-align: center;
+  font-weight: bolder;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  border-radius: 30px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  color: rgb(119, 253, 253);
+}
+
+nav {
+  margin-top: 10px;
+  transition: ease-in-out;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: ease-in-out;
+}
+
+.search-form {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.search-form input {
+  padding: 6px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-form button {
+  padding: 6px 12px;
+  background-color: #070707;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.hero {
+  padding: 40px;
+  text-align: center;
+  background: rgba(88, 250, 188, 0.24);
+  color: rgb(5, 81, 87);
+  font-size: larger;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: rgb(150, 235, 235);
+}
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  color: #f5f824;
+}
+
+.login-form {
+  background-color: rgba(77, 250, 129, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.login-form input,
+.login-form button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  transition: ease-in-out;
+}
+
+.login-form button {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.products {
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #010407;
+}
+
+.product-card::before{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+/*set the background for product-card */
+.products-card {
+  background-image: url('https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg');
+  background-color: rgba(255, 243, 243, 0.7);
+  padding: 20px;
+  border-radius: 30px;
+  max-width: 500px;
+  margin: auto;
+}
+
+
+footer {
+  background-color: rgba(82, 81, 81, 0.8);
+  padding: 20px;
+  text-align: center;
+  color: rgba(25, 247, 247, 0.959);
+  font-size: large;
+  width: 50%;
+  margin: auto;
+  border: #bd020c;
+  border-style: inset;
+  border-width: 5px;
+  border-radius: 30px;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: underline;
+}
